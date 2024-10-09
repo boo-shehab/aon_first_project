@@ -1,0 +1,104 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1200px;
+    width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin: auto;
+    height: 100%;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+header {
+    background-color: #D9D9D9;
+    height: 300px;
+}
+
+.right-menu {
+    display: flex;
+    gap: 20px;
+    justify-content: end;
+    align-items: end;
+    height: 100%;
+    padding-bottom: 50px;
+}
+
+.right-menu .icon {
+    width: 50px;
+    height: 50px;
+    background-color: #eee;
+    border-radius: 50%;
+}
+
+.article {
+
+}
+
+.article .grid {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+}
+
+.article .grid .left {
+    margin-top: -100px;
+}
+
+.article .grid .left .image{
+    width: 200px;
+    height: 200px;
+    border-radius: 20px;
+    background-color: #eee;
+}
+
+.article .grid .left h2 {
+    padding-top: 10px;
+}
+
+.article .grid .left p {
+    font-size: 26px;
+    font-weight: 100;
+}
+
+.article .grid .right {
+    display: grid;
+    padding-top: 20px;
+    gap: 20px;
+    grid-template-columns: repeat(12, 1fr);
+}
+
+.lazy-text {
+    height: 50px;
+    width: 100%;
+    border-radius: 20px;
+    background-color: #eee;
+}
+
+.lazy-text.col1 {
+    grid-column-start: 1;
+    grid-column-end: 6;
+}
+.lazy-text.col2 {
+    grid-column-start: 11;
+    grid-column-end: 13;
+}
+.lazy-text.col3 {
+    grid-column-start: 1;
+    grid-column-end: 13;
+}
+
+.lazy-text.col4 {
+    grid-column-start: 1;
+    grid-column-end: 5;
+}
+.lazy-text.col5 {
+    grid-column-start: 5;
+    grid-column-end: 13;
+}
